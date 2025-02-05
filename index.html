@@ -12,9 +12,9 @@
         <h1>Les Origines du Web</h1>
         <nav>
             <ul>
-                <li><a href="#">Articles</a></li>
-                <li><a href="#">À propos</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#article">Articles</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
       </div>
@@ -22,7 +22,7 @@
     <section>
         <figure>
             <img src="Images/Tim-Berners-Lee-640-1.jpg" alt="Tim Berners-Lee, inventeur du Web" width="300">
-            <figcaption>Tim Berners-Lee, inventeur du Web en 1989.</figcaption>
+            <figcaption><em>Tim Berners-Lee, inventeur du Web en 1989.</em></figcaption>
         </figure>
     </section>
     <section class="Introduction">
@@ -53,14 +53,75 @@
             <a href="#">Lire la suite</a>
         </article>
     </section>
-    <section id="contact">
-        <h2>Contact</h2>
+    <section id="à-propos-de-moi">
+        <h2>A propos de moi</h2>
         <address>
             <p><strong>Nom :</strong> Mannou Falonne Calista Dagnon</p>
             <p><strong>Profession :</strong> Référent Digital</p>
             <p><strong>Email :</strong> <a href="mailto:falonnedagnon@gmail.com">falonnedagnon@gmail.com</a></p>
             <p><strong>Téléphone :</strong> +229 54 15 13 76</p>
         </address>
+    </section>
+    <section id="about">
+        <h2>À propos</h2>
+        <p>Voici les dates importantes des origines du Web :</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Année</th>
+                    <th>Événement</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1989</td>
+                    <td>Tim Berners-Lee propose le concept du World Wide Web.</td>
+                </tr>
+                <tr>
+                    <td>1991</td>
+                    <td>Première page Web mise en ligne.</td>
+                </tr>
+                <tr>
+                    <td>1993</td>
+                    <td>Naissance du premier navigateur graphique : Mosaic.</td>
+                </tr>
+                <tr>
+                    <td>1998</td>
+                    <td>Création de Google.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <form action="#" method="POST">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+    
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+    
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="service">Service à contacter :</label>
+            <select id="service" name="service">
+                <option value="support">Support technique</option>
+                <option value="commercial">Service commercial</option>
+                <option value="autre">Autre</option>
+            </select>
+    
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+    
+            <div class="consen">
+                <input type="checkbox" name="newsletter">
+                <span for="newsletter">S'inscrire à la newsletter</span>
+            </div>
+    
+            <button type="submit">Envoyer</button>
+        </form>
     </section>
     <footer class="footer">
         <div>
